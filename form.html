@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="post" id="formTeste" action="mailto:contato@gmail.com">
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <label for="forNome">Nome:</label>
+            <input id="forNome" type="text" name="nome" size="40"> 
+    
+    
+            <label for="forSigno">Signo:</label>
+            <input id="forSigno" type="text" name="signo" size="40"> 
+        </fieldset>
+
+
+
+        <br/><br/>
+
+            <fieldset>
+                <legend>Região</legend>
+                <p>Selecione a sua região:</p>
+                <input id="forZn" type="radio" name="regiao" value="zn">
+                <label for="forZn">Zona Norte</label>
+                <br/>
+        
+                <input id="forzo" type="radio" name="regiao" value="zo">
+                <label for="forZo">Zona Oeste</label>
+                <br/>
+        
+                <input id="forZl" type="radio" name="regiao" value="zl">
+                <label for="forZl">Zona Leste</label>
+                <br/>
+        
+                <input id="forZs" type="radio" name="regiao" value="zs">
+                <label for="forZs">Zona Sul</label>
+        
+            </fieldset>
+       
+
+        <br/><br/>
+
+            <fieldset>
+                <legend>Transporte</legend>
+                <p>Quais são os meios de transporte que você utiliza:</p>
+                <input id="forBus" type="checkbox" name="trasnporte" value="bus">
+                <label for="forBus">Ônibus</label>
+                <br/>
+        
+                <input id="forUb" type="checkbox" name="transporte" value="car">
+                <label for="forUb">Carro</label>
+                <br/>
+        
+                <input id="forBike" type="checkbox" name="transporte" value="bike">
+                <label  for="forBike">Bicicleta</label>
+                <br/>
+        
+                <input id="forMet" type="checkbox" name="Metrô" value="metro">
+                <label for="forMet">Metrô</label>
+        
+            </fieldset>
+       
+
+        <br/><br/>
+
+    
+            <fieldset>
+                <legend>Times</legend>
+                <label for="time">Selecione seu time:</label>
+        <select id="time" name="time">
+            <option value="nenhum">Nenhum</option>
+            <option value="flamengo">Flamengo</option>
+            <option value="corinthians">Corinthians</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="bahia">Bahia</option>
+            <option value="santos">Santos</option>
+        </select>
+            </fieldset>
+        
+
+        <br><br/>
+
+            <fieldset>
+                <legend>Marcas</legend>
+                <label for="fontMarcas">Escolha sua marca:</label>
+                <input id="fontMarcas" name="marca" list="marca" placeholder="Digite sua marca">
+                <datalist id="marca">
+                    <option value="Adidas"></option>
+                    <option value="Nike"></option>
+                    <option value="Puma"></option>
+                    <option value="Bmw"></option>
+                    <option value="Honda"></option>
+                </datalist>
+            </fieldset>
+       
+
+        <br><br/>
+
+            <fieldset>
+                <legend>Melhorias</legend>
+                <p>Sugestões, elogios e críticas</p>
+                <textarea name="mensagem" rows="10" cols="50" placeholder="Deixe sua mensagem aqui" required>
+
+                </textarea>
+            </fieldset>
+                <br><br/>
+            
+        
+
+        <br><br/>
+
+        <input type="submit" value="enviar">
+
+
+    </form>
+</body>
+</html>

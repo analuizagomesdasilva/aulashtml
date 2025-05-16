@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Corrigindo erros e pseudoclasses</title>
+    <style>
+        header{
+            background-color: rgb(255, 6, 180);
+            width: 1000px;
+            height: 50px;
+            margin: auto;
+        }
+
+        #direita{
+            background-color: rgb(233, 90, 190);
+            width: 350px;
+            height: 50px;
+            float: right;
+            padding: 20px 0 0 20px;
+            box-sizing: border-box;/*adicionando o preenchimento ao tamanho total do elemento*/
+        }
+
+        #esquerda{
+            background-color: rgb(241, 116, 231);
+            width: 250px;
+            height: 50px;
+            float: left;
+        }
+
+        /*Usando o clear*/
+        .testeA01{
+           border: 3px solid palevioletred;
+           width: 100px;
+           height: 50px;
+           margin: 10px;
+           float: left;
+        }
+
+        .testeA02{
+            border: 3px solid black;
+        }
+
+        .testeB01{
+            border: 3px solid #66023c;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            float: left;
+        }
+
+        .testeB02{
+            border: 3px solid #ff0080;
+            clear: left;
+        }
+
+        /*Pseudoclasses trabalhando com link*/
+        a:link{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        a:visited{
+            color: rgb(129, 2, 55);
+
+        }
+
+        a:hover{
+            color: rgb(177, 33, 93);
+        }
+
+        a:active{
+            color: rgb(85, 22, 48);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="direita">
+            <nav>
+                <a href="#">TEXTO</a> |
+                <a href="#">TEXTO</a> |
+                <a href="#">TEXTO</a> |
+                <a href="#">TEXTO</a>
+            </nav>
+        </div>
+        <div id="esquerda"></div>
+    </header>
+
+    <!--Usando o elemento clear-->
+    <section>
+        <h2>Sem clear</h2>
+        <div class="testeA01">Nome</div>
+        <div class="testeA02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam laudantium quam in minus eligendi cumque debitis pariatur, ut soluta cum sint, odit, quia at vero dolor dolores? Quam, velit?</div>
+    </section>
+
+    <br><br>
+
+    <h2>Com clear</h2>
+        <div class="testeB01">Nome</div>
+        <div class="testeB02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam laudantium quam in minus eligendi cumque debitis pariatur, ut soluta cum sint, odit, quia at vero dolor dolores? Quam, velit?</div>
+</body>
+</html>

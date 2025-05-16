@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Medidas absolutas e relativas</title>
+    <style>
+        /* At-rules - declarção de instruções de como o css irá se comportar*/
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+        html{
+            font-size: 16px; /*Tamaho fonte padrão */
+            font-family: "Share Tech", sans-serif;
+        }
+
+        p#abs{
+            font-size: 24px; /* Tamanho da fonte absoluta */
+        }
+
+        @media screen and (max-width:800px){
+            body{
+                background-color: blue;
+                color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p id="abs">Medida absoluta</p>
+
+    <hr>
+
+    <!--Medida relativa-->
+    <!--em | relativo ao tamanho do elemento pai-->
+    <div class="paiEm" style="font-size: 16px;">
+        Texto pai
+        <div class="filhoEm" style="font-size: 2em;"> <!--2 vezes o tamanho da fonte elemento pai-->
+            Texto filho
+        </div>
+    </div>
+
+    <hr>
+
+    <!--REM | sucessor do EM. Relativo ao elemento raiz (HTML)-->
+    <div>
+        Texto pai
+        <div class="filhoRem" style="font-size: 2rem;"> <!--2 vezes o tamanho da fonte elemento raiz-->
+            Texto filho
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Percentual | relativo ao tamanho da fonte elemento pai-->
+    <div class="paiPer">
+        Texto pai
+        <div class="filhoPer" style="font-size: 300%;"> <!--300% do tamanho do elemento pai-->
+            Texto filho
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Viewport | relativo ao tamanho viewport-->
+    <div class="paiVh">
+        Texto pai
+        <div class="filhoVh" style="font-size: 10vh;"> <!--10% do tamanho da altura da janela -->
+            Texto filho
+        </div>
+    </div>
+</body>
+</html>
